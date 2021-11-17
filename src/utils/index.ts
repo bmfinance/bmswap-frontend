@@ -18,12 +18,12 @@ export function isAddress(value: any): string | false {
 }
 
 const BSCSCAN_PREFIXES: { [chainId in ChainId]: string } = {
-  56: '',
-  97: 'testnet.'
+  100: 'https://blockscout.com/xdai/mainnet',
+  77: 'https://blockscout.com/poa/sokol'
 }
 
 export function getBscScanLink(chainId: ChainId, data: string, type: 'transaction' | 'token' | 'address'): string {
-  const prefix = `https://${BSCSCAN_PREFIXES[chainId] || BSCSCAN_PREFIXES[ChainId.MAINNET]}bscscan.com`
+  const prefix = `${BSCSCAN_PREFIXES[chainId]}`
 
   switch (type) {
     case 'transaction': {

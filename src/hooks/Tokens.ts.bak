@@ -103,7 +103,7 @@ export function useToken(tokenAddress?: string): Token | undefined | null {
 }
 
 export function useCurrency(currencyId: string | undefined): Currency | null | undefined {
-  const isXDAI = currencyId?.toUpperCase() === 'XDAI'
-  const token = useToken(isXDAI ? undefined : currencyId)
-  return isXDAI ? ETHER : token
+  const isBNB = currencyId?.toUpperCase() === 'XDAI'
+  const token = useToken(isBNB ? undefined : currencyId)
+  return isBNB ? ETHER : token
 }

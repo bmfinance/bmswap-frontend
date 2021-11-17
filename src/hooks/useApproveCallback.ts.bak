@@ -82,7 +82,7 @@ export function useApproveCallback(
     // eslint-disable-next-line consistent-return
     return tokenContract
       .approve(spender, useExact ? amountToApprove.raw.toString() : MaxUint256, {
-        gasLimit: calculateGasMargin(BigNumber.from(estimatedGas))
+        gasLimit: calculateGasMargin(BigNumber.from(estimatedGas)),
       })
       .then((response: TransactionResponse) => {
         addTransaction(response, {

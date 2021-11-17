@@ -33,7 +33,7 @@ export function useSwapActionHandlers(): {
       dispatch(
         selectCurrency({
           field,
-          currencyId: currency instanceof Token ? currency.address : currency === ETHER ? 'BNB' : '',
+          currencyId: currency instanceof Token ? currency.address : currency === ETHER ? 'XDAI' : '',
         })
       )
     },
@@ -87,9 +87,9 @@ export function tryParseAmount(value?: string, currency?: Currency): CurrencyAmo
 }
 
 const BAD_RECIPIENT_ADDRESSES: string[] = [
-  '0xBCfCcbde45cE874adCB698cC183deBcF17952812', // v2 factory
-  '0xf164fC0Ec4E93095b804a4795bBe1e041497b92a', // v2 router 01
-  '0x05fF2B0DB69458A0750badebc4f9e13aDd608C7F', // v2 router 02
+  '0x1a4537cB4F8a55992fD2fb56551C3E95de3fe576', // v2 factory
+  '0x41DaA4353d80E6A0eA299645C6f4A8c7B9C0d097', // v2 router 01
+  '0x8067D8F7B35D4eCaeF5458C8E4187BD42C192Fd0', // v2 router 02
 ]
 
 /**
@@ -201,8 +201,8 @@ function parseCurrencyFromURLParameter(urlParam: any): string {
   if (typeof urlParam === 'string') {
     const valid = isAddress(urlParam)
     if (valid) return valid
-    if (urlParam.toUpperCase() === 'BNB') return 'BNB'
-    if (valid === false) return 'BNB'
+    if (urlParam.toUpperCase() === 'XDAI') return 'XDAI'
+    if (valid === false) return 'XDAI'
   }
   return ''
 }

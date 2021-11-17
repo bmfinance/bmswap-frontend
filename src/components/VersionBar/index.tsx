@@ -25,17 +25,17 @@ const VersionBar = () => {
         Version:
       </Text>
       <ButtonMenu variant="primary" scale="sm" activeIndex={1}>
-        <ButtonMenuItem as="a" href="https://exchange.pancakeswap.finance/">
+        <ButtonMenuItem as="a" href="https://bm.finance/">
           V2
         </ButtonMenuItem>
-        <ButtonMenuItem as="a" href="https://v1exchange.pancakeswap.finance/#/">
+        <ButtonMenuItem as="a" href="https://bm.finance/#/">
           V1 (old)
         </ButtonMenuItem>
       </ButtonMenu>
       <Button
         variant="subtle"
         as={Link}
-        href="https://v1exchange.pancakeswap.finance/#/migrate"
+        href="https://bm.finance/#/migrate"
         endIcon={<HelpIcon color="white" />}
         scale="sm"
         ml="16px"
