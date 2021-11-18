@@ -7,8 +7,8 @@ type ChainTokenList = {
   readonly [chainId in ChainId]: Token[]
 }
 
-export const BMB = new Token(ChainId.MAINNET, '0x7f100E641C3625E062Bf8c3c3530F1DfAb1185AD',  18,  'BMB',  'BM.FINANCE Token')
 export const WXDAI = new Token(ChainId.MAINNET, '0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d', 18, 'WXDAI', 'Wrapped XDAI')
+export const BMB = new Token(ChainId.MAINNET, '0x7f100E641C3625E062Bf8c3c3530F1DfAb1185AD',  18,  'BMB',  'BM.FINANCE Token')
 export const DAI = new Token(ChainId.MAINNET, '0x44fA8E6f47987339850636F88629646662444217', 18, 'DAI', 'Dai Stablecoin from Ethereum')
 export const BUSD = new Token(ChainId.MAINNET, '0xdd96B45877d0E8361a4DDb732da741e97f3191Ff', 18, 'BUSD', 'BUSD Token from BSC')
 export const USDT = new Token(ChainId.MAINNET, '0x4ECaBa5870353805a9F068101A40E0f32ed605C6', 18, 'USDT', 'Tether on xDai')
