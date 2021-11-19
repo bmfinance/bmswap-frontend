@@ -106,7 +106,7 @@ const FirstCard = () => {
           </Flex>
           <FoldableContent isVisible={isVisible}>
             <Text mb="16px">
-              You may need to unstake any PancakeSwap LP Tokens that you’ve staked in yield aggregators or other
+              You may need to unstake any BMSwap LP Tokens that you’ve staked in yield aggregators or other
               projects. Here are some projects you might be using:
             </Text>
             <ul>

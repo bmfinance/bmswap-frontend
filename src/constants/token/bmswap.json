@@ -1,5 +1,5 @@
 {
-  "name": "PancakeSwap Default List",
+  "name": "BMSwap Default List",
   "timestamp": "2021-03-17T09:56:23Z",
   "version": {
     "major": 2,
@@ -8,7 +8,7 @@
   },
   "tags": {},
   "logoURI": "https://bm.finance/images/logo.png",
-  "keywords": ["pancake", "default"],
+  "keywords": ["bm", "default"],
   "tokens": [
     {
       "name": "WXDAI Token",

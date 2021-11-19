@@ -32,7 +32,7 @@ const Migration = () => {
           LP Token Migration
         </Heading>
         <Text bold fontSize="24px">
-          PancakeSwap is being upgraded! <br />
+          BMSwap is being upgraded! <br />
           Migrate your LP tokens to continue earning.
         </Text>
       </Header>
@@ -61,7 +61,7 @@ const Migration = () => {
             <CardHeader>
               <Text bold>Stake in New Farms</Text>
               <Text small color="textSubtle">
-                Stake your updated LP tokens in PancakeSwap farms
+                Stake your updated LP tokens in BMSwap farms
               </Text>
             </CardHeader>
             <CardBody>
